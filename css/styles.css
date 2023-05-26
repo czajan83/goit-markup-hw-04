@@ -11,6 +11,7 @@
   --main-section-box-shadow-color: rgba(0, 0, 0, 25%);
   --full-black-color: #000000;
   --portfolio-li-border-color: #e5e5e5;
+  --icon-regular-color: #afb1b8;
 }
 
 /****** global settings ******/
@@ -119,35 +120,47 @@ nav {
 
 .header-contact-ul {
   display: flex;
+  padding-top: 32px;
+  padding-bottom: 32px;
   margin-left: auto;
   gap: 50px;
 }
 
-.header-contact-ul-li {
+.header-contact-ul-li-a {
   color: var(--dominant-text-color);
   font-size: 14px;
   line-height: 1.1;
   text-decoration: none;
   font-weight: 500;
   letter-spacing: 0.02em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.header-contact-ul-li:hover,
-.header-contact-ul-li:focus {
+.header-contact-ul-li-a:hover,
+.header-contact-ul-li-a:focus {
   color: var(--interactive-object-active-color);
+}
+
+.header-contact-ul-li-a-svg {
+  margin-right: 10px;
+  fill: currentColor;
 }
 
 /****** main section settings ******/
 
 .section-main-heading {
-  background-image: url('\\.\\images\\main-bck.jpg');
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url('\\.\\images\\main-bck.jpg');
   background-color: var(--dark-section-background-color);
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
-  background-position: 50%;
-  filter: grayscale(40%);
+  background-position: center;
   padding: 200px 0;
-  box-shadow: 0 4px 4px 0 var(--main-section-box-shadow-color);
 }
 
 .section-main-heading-title-text {
@@ -270,6 +283,72 @@ nav {
   line-height: 1.2;
   letter-spacing: 0.03em;
   text-align: center;
+  margin-bottom: 16px;
+}
+
+.our-team-div-community-links {
+  width: 206px;
+  margin-left: 70px;
+  margin-top: 12px;
+  padding: 0;
+}
+
+.our-team-div-community-links-ul {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.our-team-div-community-links-li {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 22px;
+}
+
+.our-team-div-community-links-li:hover,
+.our-team-div-community-links-li:focus {
+  background-color: var(--interactive-object-active-color);
+  color: white;
+}
+
+.our-team-div-community-links-a {
+  color: var(--icon-regular-color);
+}
+
+.our-team-div-community-links-a:hover,
+.our-team-div-community-links-a:focus {
+  background-color: var(--interactive-object-active-color);
+  color: white;
+}
+
+.our-team-div-community-links-a-svg {
+  fill: currentColor;
+}
+
+/****** our customers settings ******/
+
+.our-customers-heading {
+  color: var(--headings-text-color);
+  font-size: 36px;
+  line-height: 1.2;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.our-customers-ul {
+  display: flex;
+  gap: 30px;
+}
+
+.our-customers-ul-li {
+  background-color: var(--background-color);
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
 }
 
 /****** footer settings ******/
@@ -277,6 +356,15 @@ nav {
 .footer {
   background-color: var(--dark-section-background-color);
   padding: 60px 0;
+}
+
+.footer-div {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.footer-div-link-address {
+  width: 246px;
 }
 
 .footer-link-home-white-part {
@@ -313,6 +401,46 @@ nav {
 .footer-contact-ul .footer-contact-ul-li-link:hover,
 .footer-contact-ul .footer-contact-ul-li-link:focus {
   color: var(--interactive-object-active-color);
+}
+
+.footer-div-community-links {
+  width: 206px;
+  margin-left: 70px;
+  margin-top: 12px;
+  padding: 0;
+}
+
+.footer-div-community-links-paragraph {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: 0.03em;
+  color: var(--background-color);
+  margin-bottom: 20px;
+}
+
+.footer-div-community-links-ul {
+  display: flex;
+  gap: 10px;
+}
+
+.footer-div-community-links-li {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 10%);
+  border-radius: 22px;
+}
+
+.footer-div-community-links-li:hover,
+.footer-div-community-links-li:focus {
+  background-color: var(--interactive-object-active-color);
+}
+
+.footer-div-community-links-a-svg {
+  fill: white;
 }
 
 /****** portfolio buttons settings ******/
