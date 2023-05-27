@@ -134,7 +134,6 @@ nav {
   font-weight: 500;
   letter-spacing: 0.02em;
   display: flex;
-  justify-content: center;
   align-items: center;
 }
 
@@ -155,12 +154,15 @@ nav {
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url('\\.\\images\\main-bck.jpg');
+    url('/images/main-bck.jpg');
   background-color: var(--dark-section-background-color);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   padding: 200px 0;
+  max-width: 1600px;
+  height: 600px;
+  margin: 0 auto;
 }
 
 .section-main-heading-title-text {
@@ -201,7 +203,7 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 25px 0;
+  height: 120px;
   background-color: var(--light-section-and-button-background-color);
 }
 
@@ -308,29 +310,20 @@ nav {
   gap: 10px;
 }
 
-.our-team-div-community-links-li {
+.our-team-div-community-links-a {
   width: 44px;
   height: 44px;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 22px;
-}
-
-.our-team-div-community-links-li:hover,
-.our-team-div-community-links-li:focus {
-  background-color: var(--interactive-object-active-color);
-  color: white;
-}
-
-.our-team-div-community-links-a {
+  border-radius: 50%;
   color: var(--icon-regular-color);
 }
 
 .our-team-div-community-links-a:hover,
 .our-team-div-community-links-a:focus {
   background-color: var(--interactive-object-active-color);
-  color: white;
+  color: fff;
 }
 
 .our-team-div-community-links-a-svg {
@@ -354,23 +347,14 @@ nav {
   gap: 30px;
 }
 
-.our-customers-ul-li {
-  background-color: var(--background-color);
+.our-customers-ul-li-a {
   border-radius: 4px;
   display: flex;
   width: 170px;
   height: 92px;
   justify-content: center;
   align-items: center;
-  border: 1px solid var(--icon-regular-color);
-}
-
-.our-customers-ul-li:hover,
-.our-customers-ul-li:focus {
-  border: 1px solid var(--interactive-object-active-color);
-}
-
-.our-customers-ul-li-a {
+  border: 1px solid currentColor;
   color: var(--icon-regular-color);
 }
 
@@ -392,11 +376,7 @@ nav {
 
 .footer-div {
   display: flex;
-  justify-content: flex-start;
-}
-
-.footer-div-link-address {
-  width: 246px;
+  align-items: baseline;
 }
 
 .footer-link-home-white-part {
@@ -405,6 +385,7 @@ nav {
 
 .footer-address {
   margin-top: 20px;
+  width: 246px;
 }
 
 .footer-contact-ul .footer-contact-ul-li-address {
@@ -420,26 +401,26 @@ nav {
   color: var(--interactive-object-active-color);
 }
 
-.footer-contact-ul .footer-contact-ul-li-link {
+.footer-contact-ul-li {
+  margin-top: 9px;
+}
+
+.footer-contact-ul .footer-contact-ul-li-a {
   color: var(--footer-link-color);
   font-size: 14px;
   line-height: 2;
   text-decoration: none;
   font-style: normal;
   letter-spacing: 0.03em;
-  margin-top: 9px;
 }
 
-.footer-contact-ul .footer-contact-ul-li-link:hover,
-.footer-contact-ul .footer-contact-ul-li-link:focus {
+.footer-contact-ul .footer-contact-ul-li-a:hover,
+.footer-contact-ul .footer-contact-ul-li-a:focus {
   color: var(--interactive-object-active-color);
 }
 
 .footer-div-community-links {
-  width: 206px;
   margin-left: 70px;
-  margin-top: 12px;
-  padding: 0;
 }
 
 .footer-div-community-links-paragraph {
@@ -456,29 +437,21 @@ nav {
   gap: 10px;
 }
 
-.footer-div-community-links-li {
+.footer-div-community-links-a {
   width: 44px;
   height: 44px;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: rgba(255, 255, 255, 10%);
-  border-radius: 22px;
-}
-
-.footer-div-community-links-li:hover,
-.footer-div-community-links-li:focus {
-  background-color: var(--interactive-object-active-color);
-}
-
-.footer-div-community-div-a {
+  border-radius: 50%;
   color: var(--icon-regular-color);
 }
 
-.footer-div-community-div-a:hover,
-.footer-div-community-div-a:focus {
+.footer-div-community-links-a:hover,
+.footer-div-community-links-a:focus {
   background-color: var(--interactive-object-active-color);
-  color: white;
+  color: #fff;
 }
 
 .footer-div-community-links-a-svg {
@@ -523,7 +496,8 @@ nav {
   gap: 30px;
 }
 
-.portfolio-ul-li:hover {
+.portfolio-ul-li:hover,
+.portfolio-ul-li-a:hover {
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 12%), 0 4px 4px 0 rgba(0, 0, 0, 6%),
     1px 4px 6px 0 rgba(0, 0, 0, 16%);
 }
