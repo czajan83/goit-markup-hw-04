@@ -154,7 +154,7 @@ nav {
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url('/images/main-bck.jpg');
+    url('../images/main-bck.jpg');
   background-color: var(--dark-section-background-color);
   background-size: cover;
   background-repeat: no-repeat;
@@ -323,7 +323,7 @@ nav {
 .our-team-div-community-links-a:hover,
 .our-team-div-community-links-a:focus {
   background-color: var(--interactive-object-active-color);
-  color: fff;
+  color: #fff;
 }
 
 .our-team-div-community-links-a-svg {
@@ -446,12 +446,12 @@ nav {
   background-color: rgba(255, 255, 255, 10%);
   border-radius: 50%;
   color: var(--icon-regular-color);
+  color: #fff;
 }
 
 .footer-div-community-links-a:hover,
 .footer-div-community-links-a:focus {
   background-color: var(--interactive-object-active-color);
-  color: #fff;
 }
 
 .footer-div-community-links-a-svg {
@@ -496,7 +496,11 @@ nav {
   gap: 30px;
 }
 
-.portfolio-ul-li:hover,
+.portfolio-ul-li-a {
+  display: block;
+}
+
+.portfolio-ul-li-a:focus,
 .portfolio-ul-li-a:hover {
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 12%), 0 4px 4px 0 rgba(0, 0, 0, 6%),
     1px 4px 6px 0 rgba(0, 0, 0, 16%);
